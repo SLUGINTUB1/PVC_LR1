@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap@5.3.3",
+      "destination": "wwwroot/lib/bootstrap/",
+      "files": [
+        "css/bootstrap.min.css",
+        "js/bootstrap.bundle.min.js"
+      ]
+    },
+    {
+      "library": "aos@2.3.4",
+      "destination": "wwwroot/lib/aos/",
+      "files": [
+        "aos.css",
+        "aos.js"
+      ]
+    },
+    {
+      "library": "bootstrap-icons@1.10.5",
+      "destination": "wwwroot/lib/bootstrap-icons/",
+      "files": [
+        "font/bootstrap-icons.css",
+        "font/fonts/bootstrap-icons.woff",
+        "font/fonts/bootstrap-icons.woff2",
+        "font/bootstrap-icons.min.css"
+
+      ]
+    },
+    {
+      "library": "glightbox@3.2.0",
+      "destination": "wwwroot/lib/glightbox/",
+      "files": [
+        "css/glightbox.min.css",
+        "js/glightbox.min.js"
+      ]
+    },
+    {
+      "library": "jquery.isotope@3.0.6",
+      "destination": "wwwroot/lib/isotope-layout/",
+      "files": [
+        "isotope.pkgd.js",
+        "isotope.pkgd.min.js"
+      ]
+    },
+    {
+      "library": "validate.js@0.13.1",
+      "destination": "wwwroot/lib/php-email-form/",
+      "files": [
+        "validate.js",
+        "validate.min.js"
+      ]
+    },
+    {
+      "library": "jquery.imagesloaded@5.0.0",
+      "destination": "wwwroot/lib/imagesloaded/",
+      "files": [
+        "imagesloaded.pkgd.min.js"
+      ]
+    },
+    {
+      "library": "Swiper@11.0.5",
+      "destination": "wwwroot/lib/swiper/",
+      "files": [
+        "swiper-bundle.min.js",
+        "swiper-bundle.min.css"
+      ]
+    }
+  ]
+}
