@@ -2864,3 +2864,14 @@ section,
                 color: color-mix(in srgb, var(--default-color), transparent 60%);
                 font-size: 14px;
             }
+.btn-red {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}

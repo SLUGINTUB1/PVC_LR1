@@ -1,0 +1,45 @@
+﻿@model LR1.Models.FileDetailsModel
+
+@{
+    ViewData["Title"] = "FileDetails";
+}
+
+<div>
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>File Details</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="Index">Home</a></li>
+                    <li class="current">File Details</li>
+                </ol>
+            </div>
+        </nav>
+    </div><!-- End Page Title -->
+    <section id="File Details" class="File Details">
+
+        <div class="container" data-aos="fade-up">
+            <h2 class="mx-3 row">@Model.FileName</h2>
+            <hr />
+
+            <div class="mb-3 mx-3 row">
+            @Model.FileContent
+            </div>
+
+            <center>
+                <a asp-action="ViewFiles" class="btn btn-red mt-3">Back to List</a>
+            </center>
+        </div>
+
+    </section><!-- /Portfolio Details Section -->
+</div>>

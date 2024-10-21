@@ -1,0 +1,65 @@
+﻿@model LR1.Models.ViewFilesModel
+
+@{
+    ViewData["Title"] = "ViewFiles";
+}
+
+<div>
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>Viewing Files</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="Index">Home</a></li>
+                    <li class="current">Viewing Files</li>
+                </ol>
+            </div>
+        </nav>
+    </div><!-- End Page Title -->
+    <section id="Viewing Files" class="Viewing Files">
+
+        <div class="container" data-aos="fade-up">
+<h2>Files</h2>
+<hr />
+<table class="table">
+    <tbody>
+
+        @if (Model.Files.Count == 0)
+        {
+            <tr>
+                <td>
+                    No files found.
+                </td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var file in Model.Files)
+            {
+                <tr>
+                    <td>
+                        <a href="/Home/FileDetails?file_name=@file" target="_blank">@file</a>
+                    </td>
+                </tr>
+
+            }
+        }
+
+    </tbody>
+</table>
+
+<center>
+                <a asp-action="Upload" class="btn btn-red">Upload</a>
+</center>
+    </section><!-- /Portfolio Details Section -->
+</div>>
